@@ -1,0 +1,34 @@
+{
+	"name": "05_Sendemail",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "POST",
+					"url": "https://prod-02.centralindia.logic.azure.com:443/workflows/cd280067114b416680cfad8d376ff03a/triggers/When_a_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=AIJALorCzPyL5g9k2nNU8_tEOqMEP1kx1BoFTVXy-04",
+					"body": {
+						"value": "\n\"DataFactoryName\":\"@{pipeline().DataFactory}\",\n\"PiplineName\":\"@{pipeline().Pipeline}\",\n\"emailto\":\"kumar1987.qlikview@gmail.com\",\n\"Subject\":\"Pipeline finished!\"\n}\n",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"folder": {
+			"name": "Till Yesterday"
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-10-08T10:30:59Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

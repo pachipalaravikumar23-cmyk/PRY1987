@@ -1,0 +1,94 @@
+{
+	"name": "06_Execute pipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute Pipeline1",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "05_Sendemail",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "Business User",
+				"type": "WebActivity",
+				"dependsOn": [
+					{
+						"activity": "Execute Pipeline1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "POST",
+					"url": "https://prod-02.centralindia.logic.azure.com:443/workflows/cd280067114b416680cfad8d376ff03a/triggers/When_a_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=AIJALorCzPyL5g9k2nNU8_tEOqMEP1kx1BoFTVXy-04",
+					"body": {
+						"Message": "Current pipline run successfully",
+						"DataFactoryName": "@{pipeline().DataFactory}",
+						"PiplineName": "@{pipeline().Pipeline}",
+						"emailto": "sudheer.ketha@gmail.com",
+						"Subject": "Pipeline finished!"
+					}
+				}
+			},
+			{
+				"name": "Develpment user",
+				"type": "WebActivity",
+				"dependsOn": [
+					{
+						"activity": "Execute Pipeline1",
+						"dependencyConditions": [
+							"Failed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"method": "POST",
+					"url": {
+						"value": "https://prod-02.centralindia.logic.azure.com:443/workflows/cd280067114b416680cfad8d376ff03a/triggers/When_a_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=AIJALorCzPyL5g9k2nNU8_tEOqMEP1kx1BoFTVXy-04",
+						"type": "Expression"
+					},
+					"body": {
+						"Message": "Current pipline run successfully",
+						"DataFactoryName": "@{pipeline().DataFactory}",
+						"PiplineName": "@{pipeline().Pipeline}",
+						"emailto": "kumar1987.qlikview@gmail.com",
+						"Subject": "Pipeline finished!"
+					}
+				}
+			}
+		],
+		"folder": {
+			"name": "Till Yesterday"
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-10-08T10:30:59Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

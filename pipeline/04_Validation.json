@@ -1,0 +1,27 @@
+{
+	"name": "04_Validation",
+	"properties": {
+		"activities": [
+			{
+				"name": "Validation1",
+				"type": "Validation",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "DelimitedText1",
+						"type": "DatasetReference"
+					},
+					"timeout": "0.12:00:00",
+					"sleep": 10
+				}
+			}
+		],
+		"folder": {
+			"name": "Till Yesterday"
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-10-08T10:30:59Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

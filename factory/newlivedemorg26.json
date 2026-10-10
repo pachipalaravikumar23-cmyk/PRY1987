@@ -1,0 +1,15 @@
+{
+	"name": "newlivedemorg26",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b9d50897-952c-4d57-86eb-ae239098d44f",
+		"tenantId": "9d59b5e9-315f-4198-b3f7-7febbcda3e35"
+	}
+}
