@@ -1,6 +1,6 @@
 [
   {
-    "CustomerID": 1,
+    "Customer_ID": 1,
     "FirstName": "Orlando",
     "LastName": "Gee",
     "EmailAddress": "orlando0@adventure-works.com",
@@ -9,7 +9,7 @@
     "ModifiedDate": "2005-08-01T00:00:00"
   },
   {
-    "CustomerID": 2,
+    "Customer_ID": 2,
     "FirstName": "Keith",
     "LastName": "Harris",
     "EmailAddress": "keith0@adventure-works.com",
@@ -18,7 +18,7 @@
     "ModifiedDate": "2006-08-01T00:00:00"
   },
   {
-    "CustomerID": 3,
+    "Customer_ID": 3,
     "FirstName": "Donna",
     "LastName": "Carreras",
     "EmailAddress": "donna0@adventure-works.com",
@@ -27,7 +27,7 @@
     "ModifiedDate": "2005-09-01T00:00:00"
   },
   {
-    "CustomerID": 4,
+    "Customer_ID": 4,
     "FirstName": "Janet",
     "LastName": "Gates",
     "EmailAddress": "janet1@adventure-works.com",
@@ -36,7 +36,7 @@
     "ModifiedDate": "2006-07-01T00:00:00"
   },
   {
-    "CustomerID": 5,
+    "Customer_ID": 5,
     "FirstName": "Lucy",
     "LastName": "Harrington",
     "EmailAddress": "lucy0@adventure-works.com",
@@ -45,7 +45,7 @@
     "ModifiedDate": "2006-09-01T00:00:00"
   },
   {
-    "CustomerID": 6,
+    "Customer_ID": 6,
     "FirstName": "Rosmarie",
     "LastName": "Carroll",
     "EmailAddress": "rosmarie0@adventure-works.com",
@@ -54,7 +54,7 @@
     "ModifiedDate": "2007-09-01T00:00:00"
   },
   {
-    "CustomerID": 7,
+    "Customer_ID": 7,
     "FirstName": "Dominic",
     "LastName": "Gash",
     "EmailAddress": "dominic0@adventure-works.com",
@@ -63,7 +63,7 @@
     "ModifiedDate": "2006-07-01T00:00:00"
   },
   {
-    "CustomerID": 10,
+    "Customer_ID": 10,
     "FirstName": "Kathleen",
     "LastName": "Garza",
     "EmailAddress": "kathleen0@adventure-works.com",
@@ -72,7 +72,7 @@
     "ModifiedDate": "2006-09-01T00:00:00"
   },
   {
-    "CustomerID": 11,
+    "Customer_ID": 11,
     "FirstName": "Katherine",
     "LastName": "Harding",
     "EmailAddress": "katherine0@adventure-works.com",
@@ -81,7 +81,7 @@
     "ModifiedDate": "2005-08-01T00:00:00"
   },
   {
-    "CustomerID": 12,
+    "Customer_ID": 12,
     "FirstName": "Johnny",
     "LastName": "Caprio",
     "EmailAddress": "johnny0@adventure-works.com",
