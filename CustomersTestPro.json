@@ -1,0 +1,92 @@
+[
+  {
+    "CustomerID": 1,
+    "FirstName": "Orlando",
+    "LastName": "Gee",
+    "EmailAddress": "orlando0@adventure-works.com",
+    "Phone": "245-555-0173",
+    "city": "Chennai",
+    "ModifiedDate": "2005-08-01T00:00:00"
+  },
+  {
+    "CustomerID": 2,
+    "FirstName": "Keith",
+    "LastName": "Harris",
+    "EmailAddress": "keith0@adventure-works.com",
+    "Phone": "170-555-0127",
+    "city": "Chennai",
+    "ModifiedDate": "2006-08-01T00:00:00"
+  },
+  {
+    "CustomerID": 3,
+    "FirstName": "Donna",
+    "LastName": "Carreras",
+    "EmailAddress": "donna0@adventure-works.com",
+    "Phone": "279-555-0130",
+    "city": "Chennai",
+    "ModifiedDate": "2005-09-01T00:00:00"
+  },
+  {
+    "CustomerID": 4,
+    "FirstName": "Janet",
+    "LastName": "Gates",
+    "EmailAddress": "janet1@adventure-works.com",
+    "Phone": "710-555-0173",
+    "city": "Chennai",
+    "ModifiedDate": "2006-07-01T00:00:00"
+  },
+  {
+    "CustomerID": 5,
+    "FirstName": "Lucy",
+    "LastName": "Harrington",
+    "EmailAddress": "lucy0@adventure-works.com",
+    "Phone": "828-555-0186",
+    "city": "Chennai",
+    "ModifiedDate": "2006-09-01T00:00:00"
+  },
+  {
+    "CustomerID": 6,
+    "FirstName": "Rosmarie",
+    "LastName": "Carroll",
+    "EmailAddress": "rosmarie0@adventure-works.com",
+    "Phone": "244-555-0112",
+    "city": "Chennai",
+    "ModifiedDate": "2007-09-01T00:00:00"
+  },
+  {
+    "CustomerID": 7,
+    "FirstName": "Dominic",
+    "LastName": "Gash",
+    "EmailAddress": "dominic0@adventure-works.com",
+    "Phone": "192-555-0173",
+    "city": "Chennai",
+    "ModifiedDate": "2006-07-01T00:00:00"
+  },
+  {
+    "CustomerID": 10,
+    "FirstName": "Kathleen",
+    "LastName": "Garza",
+    "EmailAddress": "kathleen0@adventure-works.com",
+    "Phone": "150-555-0127",
+    "city": "Chennai",
+    "ModifiedDate": "2006-09-01T00:00:00"
+  },
+  {
+    "CustomerID": 11,
+    "FirstName": "Katherine",
+    "LastName": "Harding",
+    "EmailAddress": "katherine0@adventure-works.com",
+    "Phone": "926-555-0159",
+    "city": "Chennai",
+    "ModifiedDate": "2005-08-01T00:00:00"
+  },
+  {
+    "CustomerID": 12,
+    "FirstName": "Johnny",
+    "LastName": "Caprio",
+    "EmailAddress": "johnny0@adventure-works.com",
+    "Phone": "112-555-0191",
+    "city": "Chennai",
+    "ModifiedDate": "2006-08-01T00:00:00"
+  }
+]
